@@ -1,0 +1,727 @@
+:root {
+  --lgradient: linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
+  --browntext: #c7b299;
+  --darkbrown: #a48d72;
+  --titletext: #555555;
+  --graytext: #8c8c8c;
+  --btncolor: #998675;
+  --footercolor: #191919;
+  --footermyinfo: #111111;
+  --lightgray: #d1d1d1;
+  --white: #fff;
+  --black: #000;
+  --linebg: #f1eee9;
+  --lightgraybg: #fbfaf8;
+  --darkbg: #362f2d;
+  --footersubtext: #363636;
+  --footerline: #252525;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Myriad Pro" sans-serif;
+}
+
+/* ! HEADER  */
+.header {
+  background: url("../img/header.png") no-repeat center / cover;
+  height: 100vh;
+  position: relative;
+}
+
+.nav {
+  padding-top: 30px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav__list {
+  margin-left: 185px;
+}
+
+.nav__item {
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+.nav__link {
+  font-size: 14px;
+  color: var(--white);
+  font-weight: 300;
+  font-family: "Montserrat";
+  display: inline-block;
+}
+
+.nav__link:hover {
+  color: var(--browntext);
+}
+
+.nav__cart {
+}
+
+.icon__cart {
+  margin-left: 40px;
+  width: 17px;
+}
+.icon__search {
+  margin-left: 25px;
+  width: 17px;
+}
+
+.header__subtitle {
+  font-family: "Raleway";
+  font-size: 36px;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.header__title {
+  color: var(--white);
+  font-family: "Raleway";
+  font-size: 52px;
+  font-weight: 800;
+}
+
+.header__text {
+  font-weight: 300;
+  color: var(--white);
+  font-family: "Montserrat";
+  line-height: 24px;
+  width: 595px;
+}
+
+.header__btn {
+  background: var(--btncolor);
+  box-shadow: 0px 3px 0 #736357;
+  color: var(--white);
+  padding: 15px 40px;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  margin-top: 52px;
+  transition: ease-in-out 0.4s;
+  box-shadow: inset 0 0 0 rgb(255, 255, 255);
+}
+
+.header__btn:hover {
+  background: #ffffff;
+  color: var(--btncolor);
+  box-shadow: inset 210px 0 0 rgb(255, 255, 255);
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.header__cirlce {
+  width: 8px;
+  height: 8px;
+  background: #999797;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 95%;
+  left: 46.5%;
+}
+
+.div .header__cirlce:nth-child(2) {
+  top: 95%;
+  left: 48%;
+}
+.div .header__cirlce:nth-child(3) {
+  top: 95%;
+  left: 49.5%;
+}
+.div .header__cirlce:nth-child(4) {
+  top: 95%;
+  left: 51%;
+}
+.div .header__cirlce:nth-child(5) {
+  top: 95%;
+  left: 52.5%;
+}
+
+.header__cirlce:hover {
+  background: transparent;
+  border: 1px solid var(--white);
+  transform: scale(1.5);
+}
+
+.card__line {
+  height: 3px;
+  width: 70px;
+  background: var(--linebg);
+  display: inline-block;
+}
+/* ! HEADER  END*/
+
+/* ! MAIN*/
+/* ! SECTION-1 */
+
+.section-1 {
+  margin: 82px 0;
+}
+
+.card__img {
+  filter: var(--browntext);
+}
+.card__title {
+  font-size: 22px;
+  color: var(--titletext);
+  font-family: "Raleway";
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.card:hover .card__title {
+  color: var(--browntext);
+}
+.card:hover .card__text::after {
+  background: var(--browntext);
+}
+
+.card__text {
+  font-size: 13px;
+  color: var(--graytext);
+  line-height: 24px;
+  font-family: "Montserrat";
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.card__text::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: var(--linebg);
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.card__text::after:hover {
+  content: "";
+  background: var(--browntext);
+}
+/* ! SECTION-1  END*/
+
+/* ! SECTION-2*/
+
+.section-2 {
+  background: var(--lightgraybg);
+  padding-top: 82px;
+}
+.section__title {
+  font-size: 29px;
+  color: var(--titletext);
+  font-weight: 600;
+  font-family: "Raleway";
+  margin-bottom: 18px;
+}
+
+.section__subtitle {
+  font-family: "Montserrat";
+  color: var(--graytext);
+  line-height: 26px;
+  width: 744px;
+  margin: 0 auto;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.carousel__img {
+  width: 100%;
+}
+
+.purches__content {
+  background: var(--lgradient);
+  height: 130px;
+}
+
+.purches__span {
+  color: var(--browntext);
+}
+
+.purches__title {
+  font-family: "Myriad Pro";
+  font-size: 25px;
+  color: var(--white);
+  margin-left: 30px;
+}
+
+.purches__subtitle {
+  font-family: "Montserrat";
+  color: #615855;
+  font-weight: 400;
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+.purches__btn {
+  background: var(--btncolor);
+  color: var(--white);
+  box-shadow: 0px 3px 0 #736357;
+  padding: 11px 30px;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  line-height: 23px;
+  margin-right: 20px;
+  transition: 0.4s all ease-in-out;
+  box-shadow: inset 0 0 0 rgb(255, 255, 255);
+}
+
+.purches__btn:hover {
+  background: #ffffff;
+  color: var(--btncolor);
+  box-shadow: inset 210px 0 0 rgb(255, 255, 255);
+}
+
+/* ! SECTION-2  END*/
+
+/* ! SECTION-3 */
+.section-3 {
+  margin: 70px 0;
+}
+
+.project__btn {
+  background: var(--white);
+  font-family: "Montserrat";
+  font-weight: 400;
+  display: 14px;
+  color: var(--graytext);
+  transition: 0.3s all ease-in-out;
+}
+
+.project__btn:hover {
+  background: var(--btncolor);
+  color: var(--white);
+}
+
+.project__card {
+  position: relative;
+}
+
+.project__body {
+  background: var(--lightgraybg);
+  transition: 0.4s all linear;
+}
+.project__card:hover .project__body {
+  background: var(--darkbg);
+}
+
+.project__card .card__title {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--browntext);
+}
+
+.project__card .card__subtitle {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--lightgray);
+  line-height: 25px;
+}
+
+.project__card:hover .card__title {
+  color: var(--white);
+}
+
+.project__card:hover .card__subtitle {
+  color: var(--browntext);
+}
+/* ! НЕ ЗАБУДЬ НАПИСАТЬ ПОЗИШН РЕЛЕТИВ К ДИВУ ВНУТРИ КОТОРОГО БУДЕТ ОВЕРЛЕЙ ИНАЧЕ НЕ БУДЕТ РАБОТАТЬ */
+.card__pict {
+  transition: 0.5s all linear;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ! КАРТИНКА ДОЛЖНА БЫТЬ СНАРУЖЕ ОВЕРЛЕЯ  */
+.project__card .card__img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s all linear;
+}
+/* ! ЭТО ОВЕРЛЕЙ СКОРА ТЫ СТАНЕШЬ МАСТЕРОВ В ЭТОМ И БУДЕШЬ ДЕЛАТЬ БЫСТРЕЕ ВЕДЬ С КАЖДЫМ РАЗОМ У ТЕБЯ ВСЕ ЛУЧШЕ  И БЫСТРЕЕ ПОЛУЧАЕТСЯ ЭТО ДЕЛАТЬ */
+.card__overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 230px;
+  transition: 0.5s all linear;
+}
+
+.project__card:hover .card__overlay {
+  top: 0;
+  transition: 0.5s all linear;
+}
+
+.card__icon {
+  width: 20px;
+  margin-top: 100px;
+}
+
+/* ! SECTION-3  END*/
+
+/* ! SECTION-4  */
+.website__video {
+  width: 100%;
+  height: 90vh;
+}
+
+.section-4 {
+  position: relative;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.video__title {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Raleway";
+  color: var(--white);
+  position: absolute;
+  top: 310px;
+  left: 450px;
+}
+
+.video__text {
+  font-weight: 300;
+  font-family: "Montserrat";
+  line-height: 28px;
+  color: #000;
+  color: var(--white);
+  position: absolute;
+  top: 350px;
+  left: 340px;
+  width: 573px;
+}
+
+/* ! SECTION-4  END*/
+
+/* ! SECTION-5 */
+
+.mobile__device {
+  width: 400px;
+  height: 500px;
+}
+
+.section__title {
+  margin-top: 70px;
+}
+
+.device__text {
+  font-family: "Montserrat";
+  color: var(--graytext);
+  line-height: 26px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  width: 642px;
+}
+
+.device__btn {
+  width: 10px;
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+
+.collapse__btn {
+  padding: 4px 7px;
+  background: var(--browntext);
+  border-radius: 50%;
+  border: none;
+  color: var(--white);
+}
+
+.collapse__appear {
+  font-family: "Montserrat";
+  color: var(--graytext);
+  line-height: 26px;
+  font-size: 15px;
+  margin-left: 84px;
+}
+
+/* ! ARTICLE TWO*/
+.article-2 {
+  padding: 50px 0;
+  background: var(--lgradient);
+}
+
+.result__img {
+  width: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.result__number {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: 38px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+.result__text {
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: var(--browntext);
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.result__text::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  display: block;
+  background: var(--white);
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* ! ARTICLE TWO END*/
+
+/* ! SECTION-5  END*/
+
+/* ! SECTION-6*/
+
+.section-6 {
+  padding-bottom: 70px;
+}
+.card__darkbg {
+  background: var(--black);
+}
+
+.recent__img {
+  width: 100%;
+  transition: 0.5s all linear;
+  background: var(--black);
+}
+
+.card__body {
+  padding-left: 20px;
+  border-radius: 0px;
+  transition: 0.5s all linear;
+}
+
+.recent__title {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--titletext);
+  margin-top: 15px;
+  transition: 0.5s all linear;
+}
+
+.recent__text {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--graytext);
+  line-height: 22px;
+  margin-top: 13px;
+  transition: 0.5s all linear;
+}
+
+.read__more {
+  font-weight: 300;
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--browntext);
+  line-height: 20px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.read__more:hover {
+  color: var(--browntext);
+}
+
+.read__link {
+  color: var(--browntext);
+  margin-left: 5px;
+}
+
+.recent__date {
+  font-family: "Montserrat";
+  font-size: 24px;
+  color: var(--white);
+  background: #363636;
+  width: 50px;
+  border-radius: 3px;
+  transition: 0.5s all linear;
+}
+
+.recent__month {
+  color: var(--white);
+  font-size: 12px;
+  background: #252525;
+  width: 50px;
+  display: block;
+  padding: 4px 10px;
+  transition: 0.5s all linear;
+}
+/* ! HOVER EFFECTS FOR CARDS */
+.recent__card:hover .recent__img {
+  opacity: 0.5;
+}
+.recent__card:hover .card__body {
+  background: var(--darkbg);
+}
+.recent__card:hover .recent__title {
+  color: var(--browntext);
+}
+.recent__card:hover .recent__text {
+  color: var(--white);
+}
+.recent__card:hover .recent__date {
+  background: var(--browntext);
+}
+.recent__card:hover .recent__month {
+  background: var(--darkbrown);
+}
+/* ! HOVER EFFECTS FOR CARDS END */
+
+.page__controller {
+  margin-top: 30px;
+}
+
+.previous__page {
+  color: var(--lightgray);
+  border: 1.5px solid var(--lightgray);
+  padding: 3px 5px;
+  border-radius: 50%;
+}
+
+.next__page {
+  color: var(--browntext);
+  border: 1.5px solid var(--browntext);
+  padding: 3px 5px;
+  border-radius: 50%;
+}
+
+/* ! SECTION-6 END*/
+/* ! MAIN END*/
+
+/* !FOOTER  */
+/* !FOOTER  ADVER*/
+.footer__advert {
+  background: url(../img/photo-footer.png) no-repeat center / cover;
+  height: 60vh;
+  width: 100%;
+}
+
+.footer__logo {
+  width: 180px;
+}
+/* !FOOTER ADVER END */
+/* !FOOTER INFO */
+.footer__info {
+  background: var(--footercolor);
+  padding: 60px 0;
+}
+
+.footer__sitelogo {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.footer__text {
+  color: var(--titletext);
+  font-family: "Montserrat";
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.footer__title {
+  color: var(--white);
+  font-size: 20px;
+  font-family: "Raleway";
+  font-weight: 700;
+}
+
+.footer__subtext {
+  font-family: "Montserrat";
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--footersubtext);
+  line-height: 20px;
+}
+
+.footer__line::after {
+  content: "";
+  height: 1px;
+  background: var(--footerline);
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.footer__text:nth-child(5) {
+  color: var(--browntext);
+}
+
+.widget__photo {
+  width: 120px;
+}
+/* !FOOTER INFO END */
+
+/* !FOOTER CREATER */
+
+.creater__info {
+  background: var(--footermyinfo);
+  padding: 30px 0;
+}
+.creater__text {
+  font-weight: 300;
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: var(--titletext);
+  line-height: 20px;
+}
+
+.vertical__line::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: var(--footerline);
+  margin: 0 8px;
+}
+
+.creater__text:nth-child(3) {
+  color: var(--browntext);
+}
+/* !FOOTER CREATER END */
+
+/* !FOOTER  END*/
